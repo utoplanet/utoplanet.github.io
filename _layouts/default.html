@@ -23,7 +23,7 @@
 	<body>
 		<nav>
 			<div class="container">
-				<a href="{{ site.baseurl }}">{% include logo.html %}</a>
+				<a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/images/logo.jpg"></a>
 			</div>
 		</nav>
 		<div class="content">
@@ -47,21 +47,13 @@
 							{% include icons/footer.html icon="email" %} {{ site.data.company.email }}
 						</a>
 					</p>
-					<p class="phone">
-						<a href="tel:{{ site.data.company.phone | replace: ' ', '-' }}">
-							{% include icons/footer.html icon="phone" %} {{ site.data.company.phone }}
-						</a>
-					</p>
 				</div>
 
 				<div class="sharing">
-					<a class="facebook" href="https://www.facebook.com/{{ site.data.company.facebook }}">
-						{% include icons/social-media.html social_icon="facebook" %}
+					<a class="instagram" href="https://www.instagram.com/{{ site.data.company.instagram }}">
+						{% include icons/social-media.html social_icon="instagram" %}
 					</a>
-					<a class="twitter" href="https://twitter.com/{{ site.data.company.twitter }}">
-						{% include icons/social-media.html social_icon="twitter" %}
-					</a>
-					<a class="youtube" href="https://youtube.com/{{ site.data.company.youtube }}">
+					<a class="youtube" href="https://youtube.com/channel/{{ site.data.company.youtube }}">
 						{% include icons/social-media.html social_icon="youtube" %}
 					</a>
 				</div>
